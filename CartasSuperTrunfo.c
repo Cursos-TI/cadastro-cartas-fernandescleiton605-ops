@@ -8,13 +8,14 @@ int main() {
   printf("Super Trunfo\n");
   // Área para definição das variáveis para armazenar as propriedades das cidades
   // Cadastros das cartas inicial
-  int populacao;
-  float area;
-  float produto;
-  int pontos;
+  int populacao, habitantes;
+  float area, territorio;
+  float produto, bruto;
+  int pontos, turistico;
 
   // Área para entrada de dados
-  //Realize os cadastros que são necessários as cartas do jogo
+  //Realize os cadastros que são necessários a carta 1 do jogo
+  printf("Carta 1\n");
   printf("Cadastre população:\n", populacao);
   scanf("%d", &populacao);
 
@@ -26,6 +27,22 @@ int main() {
 
   printf("Cadastre nº pontos turísticos:\n", pontos);
   scanf("%d", &pontos);
+  
+  //Cadastros para a carta 2
+  printf("\n");
+  printf("Carta 2\n");
+  printf("Cadastre população:\n", habitantes);
+  scanf("%d", &habitantes);
+
+  printf("Cadastre área da cidade:\n", territorio);
+  scanf("%f", &territorio);
+
+  printf("Cadastre o PIB:\n", bruto);
+  scanf("%f", &bruto);
+
+  printf("Cadastre nº pontos turísticos:\n", turistico);
+  scanf("%d", &turistico);
+
 
   // Área para exibição dos dados da cidade
   //Verifique a aparencia de suas cartas
@@ -38,5 +55,13 @@ int main() {
   printf("Número de pontos turísticos:%d\n", pontos);
   printf("\n");
   
+  printf("\n");
+  printf("Carta 2\n");
+  printf("População em milhões de habitantes:%d\n", habitantes);
+  printf("Área em km²:%.2f\n", territorio);
+  printf("PIB:%.2f\n", bruto);
+  printf("Número de pontos turísticos:%d\n", turistico);
+  printf("\n");
+
 return 0;
 } 
