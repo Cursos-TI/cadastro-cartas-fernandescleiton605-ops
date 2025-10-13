@@ -46,6 +46,7 @@ int main() {
 
   // Área para exibição dos dados da cidade
   //Verifique a aparencia de suas cartas
+  //Exibição Carta 1
 
   printf("\n");
   printf("Carta 1\n");
@@ -55,6 +56,7 @@ int main() {
   printf("Número de pontos turísticos:%d\n", pontos);
   printf("\n");
   
+  //Exibição Carta 2
   printf("\n");
   printf("Carta 2\n");
   printf("População em milhões de habitantes:%d\n", habitantes);
