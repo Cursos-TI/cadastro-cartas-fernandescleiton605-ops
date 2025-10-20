@@ -8,6 +8,12 @@ int main() {
   printf("Super Trunfo\n");
   // Área para definição das variáveis para armazenar as propriedades das cidades
   // Cadastros das cartas inicial
+  char [50] estado;
+  char [50] estado2;
+  char [10] codigo;
+  char [10] codigo2;
+  char [50] nome;
+  char [50] nome2;
   int populacao, habitantes;
   float area, territorio;
   float produto, bruto;
@@ -16,6 +22,15 @@ int main() {
   // Área para entrada de dados
   //Realize os cadastros que são necessários a carta 1 do jogo
   printf("Carta 1\n");
+  printf("Cadastre o Estado:\n");
+  scanf("%s", %estado);
+
+  printf("Cadastre um código para a carta:\n")
+  scanf("%s", &codigo);
+
+  printf("Cadastre o nome da cidade:\n")
+  scanf("%s", &nome);
+
   printf("Cadastre população:\n", populacao);
   scanf("%d", &populacao);
 
@@ -31,6 +46,15 @@ int main() {
   //Cadastros para a carta 2
   printf("\n");
   printf("Carta 2\n");
+  printf("Cadastre o Estado:\n");
+  scanf("%s", %estado2);
+
+  printf("Cadastre um código para a carta")
+  scanf("%s", &codigo2);
+
+  printf("Cadastre o nome da cidade:\n")
+  scanf("%s", &nome2);
+
   printf("Cadastre população:\n", habitantes);
   scanf("%d", &habitantes);
 
