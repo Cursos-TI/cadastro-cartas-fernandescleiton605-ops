@@ -8,12 +8,9 @@ int main() {
   printf("Super Trunfo\n");
   // Área para definição das variáveis para armazenar as propriedades das cidades
   // Cadastros das cartas inicial
-  char [50] estado;
-  char [50] estado2;
-  char [10] codigo;
-  char [10] codigo2;
-  char [50] nome;
-  char [50] nome2;
+  char estado [50], ufb [50];
+  char codigo [50], cod [10];
+  char nome [50], city [50];
   int populacao, habitantes;
   float area, territorio;
   float produto, bruto;
@@ -22,13 +19,13 @@ int main() {
   // Área para entrada de dados
   //Realize os cadastros que são necessários a carta 1 do jogo
   printf("Carta 1\n");
-  printf("Cadastre o Estado:\n");
-  scanf("%s", %estado);
+  printf("Cadastre o Estado:\n", estado);
+  scanf("%s", &estado);
 
-  printf("Cadastre um código para a carta:\n")
+  printf("Cadastre um código para a carta:\n", codigo);
   scanf("%s", &codigo);
 
-  printf("Cadastre o nome da cidade:\n")
+  printf("Cadastre o nome da cidade:\n", nome);
   scanf("%s", &nome);
 
   printf("Cadastre população:\n", populacao);
@@ -46,14 +43,14 @@ int main() {
   //Cadastros para a carta 2
   printf("\n");
   printf("Carta 2\n");
-  printf("Cadastre o Estado:\n");
-  scanf("%s", %estado2);
+  printf("Cadastre o Estado:\n", ufb);
+  scanf("%s", &ufb);
 
-  printf("Cadastre um código para a carta")
-  scanf("%s", &codigo2);
+  printf("Cadastre um código para a carta\n", cod);
+  scanf("%s", &cod);
 
-  printf("Cadastre o nome da cidade:\n")
-  scanf("%s", &nome2);
+  printf("Cadastre o nome da cidade:\n", city);
+  scanf("%s", &city);
 
   printf("Cadastre população:\n", habitantes);
   scanf("%d", &habitantes);
@@ -74,6 +71,9 @@ int main() {
 
   printf("\n");
   printf("Carta 1\n");
+  printf("Estado:%s\n", estado);
+  printf("Código:%s\n", codigo);
+  printf("Cidade:%s\n", nome);
   printf("População em milhões de habitantes:%d\n", populacao);
   printf("Área em km²:%.2f\n", area);
   printf("PIB:%.2f\n", produto);
@@ -83,6 +83,9 @@ int main() {
   //Exibição Carta 2
   printf("\n");
   printf("Carta 2\n");
+  printf("Estado:%s\n", ufb);
+  printf("Código:%s\n", cod);
+  printf("Cidade:%s\n", city);
   printf("População em milhões de habitantes:%d\n", habitantes);
   printf("Área em km²:%.2f\n", territorio);
   printf("PIB:%.2f\n", bruto);
