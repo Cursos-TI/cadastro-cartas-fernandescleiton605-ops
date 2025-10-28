@@ -1,9 +1,7 @@
 #include <stdio.h>
-
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
-
 int main() {
   printf("Super Trunfo\n");
   // Área para definição das variáveis para armazenar as propriedades das cidades
@@ -16,10 +14,10 @@ int main() {
   float area, territorio;
   float produto, bruto;
   int pontos, turistico;
-
+  float densidade, densidade1;
+  float pibpc, pibpc1;
   // Área para entrada de dados
   //Realize os cadastros que são necessários a carta 1 do jogo
-
   printf("Carta 1\n");
   printf("Cadastre um código para a carta:\n", codigo);
   scanf("%s", &codigo);
@@ -37,9 +35,7 @@ int main() {
   scanf("%f", &produto);
   printf("Cadastre nº pontos turísticos:\n", pontos);
   scanf("%d", &pontos);
-  
   //Cadastros para a carta 2
-
   printf("\n");
   printf("Carta 2\n");
   printf("Cadastre um código para a carta\n", cod);
@@ -58,36 +54,39 @@ int main() {
   scanf("%f", &bruto);
   printf("Cadastre nº pontos turísticos:\n", turistico);
   scanf("%d", &turistico);
-
   // Área para exibição dos dados da cidade
   //Verifique a aparencia de suas cartas
   //Exibição Carta 1
-
+  densidade = populacao / area;
+  pibpc = produto / populacao;
   printf("\n");
   printf("Carta 1\n");
-  printf("Estado:%s\n", codigo);
+  printf("Código:%s\n", codigo);
   printf("País:%s\n", pais);
-  printf("Código:%s\n", estado);
+  printf("Estado:%s\n", estado);
   printf("Cidade:%s\n", nome);
   printf("População em milhões de habitantes:%d\n", populacao);
   printf("Área em km²:%.2f\n", area);
   printf("PIB:%.2f\n", produto);
   printf("Número de pontos turísticos:%d\n", pontos);
+  printf("Densidade populacional: %.2f hab/km²\n", densidade);
+  printf("PIB per capita: %.2f reais\n", pibpc);
   printf("\n");
-  
   //Exibição Carta 2
-
+  densidade1 = habitantes / territorio;
+  pibpc1 = bruto / habitantes;
   printf("\n");
   printf("Carta 2\n");
-  printf("Estado:%s\n", cod);
+  printf("Código:%s\n", cod);
   printf("País:%s\n", country);
-  printf("Código:%s\n", ufb);
+  printf("Estado:%s\n", ufb);
   printf("Cidade:%s\n", city);
   printf("População em milhões de habitantes:%d\n", habitantes);
   printf("Área em km²:%.2f\n", territorio);
   printf("PIB:%.2f\n", bruto);
   printf("Número de pontos turísticos:%d\n", turistico);
+  printf("Densidade populacional: %.2f hab/km²\n", densidade1);
+  printf("PIB per capita: %.2f reais\n", pibpc1);
   printf("\n");
-
 return 0;
 } 
