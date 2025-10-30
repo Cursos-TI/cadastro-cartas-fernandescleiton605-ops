@@ -54,11 +54,12 @@ int main() {
   scanf("%f", &bruto);
   printf("Cadastre nº pontos turísticos:\n", turistico);
   scanf("%d", &turistico);
+  //Cálculo densidade demográfica e PIB per capita
+  densidade = populacao / area;
+  pibpc = produto / populacao;
   // Área para exibição dos dados da cidade
   //Verifique a aparencia de suas cartas
   //Exibição Carta 1
-  densidade = populacao / area;
-  pibpc = produto / populacao;
   printf("\n");
   printf("Carta 1\n");
   printf("Código:%s\n", codigo);
@@ -72,9 +73,10 @@ int main() {
   printf("Densidade populacional: %.2f hab/km²\n", densidade);
   printf("PIB per capita: %.2f reais\n", pibpc);
   printf("\n");
-  //Exibição Carta 2
+  //Cálculo densidade demográfica e PIB per capita
   densidade1 = habitantes / territorio;
   pibpc1 = bruto / habitantes;
+  //Exibição Carta 2
   printf("\n");
   printf("Carta 2\n");
   printf("Código:%s\n", cod);
