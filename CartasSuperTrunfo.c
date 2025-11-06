@@ -10,12 +10,13 @@ int main() {
   char estado [50], ufb [50];
   char codigo [50], cod [10];
   char nome [50], city [50];
-  int populacao, habitantes;
+  unsigned long int populacao, habitantes;
   float area, territorio;
   float produto, bruto;
   int pontos, turistico;
   float densidade, densidade1;
   float pibpc, pibpc1;
+  float superpoder, podersuper;
   // Área para entrada de dados
   //Realize os cadastros que são necessários a carta 1 do jogo
   printf("Carta 1\n");
@@ -54,9 +55,10 @@ int main() {
   scanf("%f", &bruto);
   printf("Cadastre nº pontos turísticos:\n", turistico);
   scanf("%d", &turistico);
-  //Cálculo densidade demográfica e PIB per capita
+  //Cálculos de densidade demográfica e PIB per capita
   densidade = populacao / area;
   pibpc = produto / populacao;
+  superpoder = populacao + area + produto + pibpc + turistico;
   // Área para exibição dos dados da cidade
   //Verifique a aparencia de suas cartas
   //Exibição Carta 1
@@ -72,10 +74,12 @@ int main() {
   printf("Número de pontos turísticos:%d\n", pontos);
   printf("Densidade populacional: %.2f hab/km²\n", densidade);
   printf("PIB per capita: %.2f reais\n", pibpc);
+  printf("Super Poder: %f\n", superpoder);
   printf("\n");
-  //Cálculo densidade demográfica e PIB per capita
+  //Cálculos de densidade demográfica e PIB per capita
   densidade1 = habitantes / territorio;
   pibpc1 = bruto / habitantes;
+  podersuper = habitantes + territorio + bruto + pibpc1 + pontos;
   //Exibição Carta 2
   printf("\n");
   printf("Carta 2\n");
@@ -89,6 +93,7 @@ int main() {
   printf("Número de pontos turísticos:%d\n", turistico);
   printf("Densidade populacional: %.2f hab/km²\n", densidade1);
   printf("PIB per capita: %.2f reais\n", pibpc1);
+  printf("Super Poder: %f\n", podersuper);
   printf("\n");
 return 0;
 } 
