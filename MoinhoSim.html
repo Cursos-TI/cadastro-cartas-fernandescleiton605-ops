@@ -836,8 +836,12 @@
             border: 1px solid var(--border-color);
             border-radius: 8px;
             touch-action: none;
-            -webkit-user-select: all;
-        }
+           .elemento-nao-selecionavel {
+            -webkit-user-select: none; /* Safari, Chrome antigo, iOS */
+            -moz-user-select: none;    /* Firefox antigo */
+            -ms-user-select: none;     /* Internet Explorer / Edge antigo */
+            user-select: none;         /* Propriedade padrão (deve vir por último) */
+}
 
         .knob-title {
             font-size: 0.72em;
